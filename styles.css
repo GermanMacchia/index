@@ -104,8 +104,9 @@
 	padding: 0;
 }
 
+/*;*/
 body {
-	background: #261C2C; 
+	background:  #0353a4;
 	color: rgb(255, 255, 255);
 	text-align: center;
 
@@ -113,7 +114,6 @@ body {
 }
 
 header,
-
 main {
 	width: 80vw;
 	margin: 0 auto;
@@ -127,6 +127,17 @@ main {
 .blg{
 	height: 40rem;
 	width: auto;
+
+}
+
+#mainline{
+	display: flex;
+}
+
+#sunf{
+	height: 11rem;
+	width: auto;	
+	margin-top: 6rem;
 }
 
 #cards {
@@ -243,12 +254,24 @@ aside p {
 #tira{
 	display: flex;
 	flex-direction: row;
+ 	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,83,164,1) 55%, rgba(3,83,164,1) 0%); 
+	margin-top: 20px;
+	margin-bottom: 25px;
+	border-radius: 50%;
+	padding-left: 10rem;
+
+}
+hr{
+	background-color: #2a9d8f;
+	opacity: 100;
+	padding-top: 5px;
 }
 
 .pin{
 	height: 4.7rem;
 	width: auto;
-	margin-top: 1.5rem;
+	margin: 1.5rem;
 }
 
 a{
@@ -256,7 +279,7 @@ a{
 	text-decoration: none;
 }
 a:hover{
-	color: #5089C6;
+	color: #ff5c8a;
 }
 
 .icon{
@@ -306,3 +329,35 @@ a:hover{
   text-align: center;
 }
 
+
+@media (min-width: 801px) { 
+	#sunf{	
+		padding-left: 3rem;
+	}
+}
+
+@media (min-width: 1022px) { 
+	#sunf{
+		padding-left: 10rem;
+	}
+}
+
+@media (min-width: 1288px) { 
+	#sunf{
+		padding-left: 24rem;
+	}	
+}
+
+
+@media (min-width: 1610px) { 
+	#sunf{
+		padding-left: 44rem;
+	}
+}
+
+
+@media (min-width: 1900px) { 
+	#sunf{
+		padding-left: 49rem;
+	}
+}
