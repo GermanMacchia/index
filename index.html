@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="css/bootstrap.css" rel="stylesheet"/>
+		<link href="styles.css" rel="stylesheet"/>
+		<script type="text/javascript" src="js/bootstrap.js" /></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Germán Osses Macchia</title>
+	</head>
+	<header>
+		<div class="d-flex justify-content-end">
+			<div class="p-4 bd-highlight">
+				<a href="#blog">
+					<h4>Blog</h4>
+				</a>
+			</div>
+			<div class="p-4 bd-highlight">
+				<a href="#proy">
+					<h4>Proyectos</h4>
+				</a>
+			</div>
+			<div class="p-4 bd-highlight">
+				<a href="#cont">
+					<h4>Contacto</h4>
+				</a>
+			</div>
+		</div>
+	</header>
+	<body>
+		<main>
+			<div style="text-align: left;">
+				<h1>¡Hola!</h1>
+				<h2 style="padding-left: 8rem;">Mi nombre es Germán...</h2>
+			</div>
+			<div id="recuadro">
+				<img src="./assets/IMG_20200304_183457411~4.jpg" id="foto" alt="Foto">
+			</div>
+			<div id="tira">
+				<img class= "pin mod" src="./assets/sap.png" data-bs-toggle="modal" data-bs-target="#sapModal">
+				<img class="pin mod" src="./assets/flutter.png"  data-bs-toggle="modal" data-bs-target="#flutModal">
+				<img class="pin mod" src="./assets/java.png"  data-bs-toggle="modal" data-bs-target="#javaModal">	
+				<img class="pin mod" src="./assets/react.png"  data-bs-toggle="modal" data-bs-target="#reactModal">
+			</div>
+			<div class="titulo">
+				<h1 id="blog">Blog</h1>
+			</div>		
+			<div id="blgdata" class="carousel slide" data-bs-ride="carousel" >
+				<div class="carousel-indicators">
+				<button type="button" data-bs-target="#blgdata" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#blgdata" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#blgdata" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="2000">
+						<a href="https://medium.com/@germanmacchia/devops-79a580fde534" target="_blank">
+							<img class="blg" src="./assets/DevOps.jpg" class="d-block w-100" alt="DevOps">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a>
+							<img class="blg" src="./assets/Asertividad.jpg" class="d-block w-100" alt="Asertividad">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a>
+							<img class="blg" src="./assets/Inceritidumbre.jpg" class="d-block w-100" alt="Inceritidumbre">
+						</a>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#blgdata" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#blgdata" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<div class="titulo">
+				<h1 id="proy">Proyectos</h1>
+			</div>
+			<ul id="cards">
+				<li class="card" id="card_1">
+					<div class="card__content">
+						<div>
+							<h2>Mis Libros App</h2>
+							<p>Gestor de base de datos elaborado en ReactJS</p>
+							<p><a href="#top" class="btn btn--accent">Read more</a></p>
+						</div>
+						<figure>
+							<img src="./assets/mislibros1.jpg" alt="Image description">
+						</figure>
+					</div>
+				</li>
+				<li class="card" id="card_2">
+					<div class="card__content">
+						<div>
+							<h2>Card Two</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<p><a href="#top" class="btn btn--accent">Read more</a></p>
+						</div>
+						<figure>
+							<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description">
+						</figure>
+					</div>
+				</li>
+				<li class="card" id="card_3">
+					<div class="card__content">
+						<div>
+							<h2>Card Three</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<p><a href="#top" class="btn btn--accent">Read more</a></p>
+						</div>
+						<figure>
+							<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg" alt="Image description">
+						</figure>
+					</div>
+				</li>
+				<li class="card" id="card_4">
+					<div class="card__content">
+						<div>
+							<h2>Card Four</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<p><a href="#top" class="btn btn--accent">Read more</a></p>
+						</div>
+						<figure>
+							<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description">
+						</figure>
+					</div>
+				</li>
+			</ul>
+		</main>
+		<!--
+		<aside>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
+			
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam molestias. Fuga similique, dolor tempora rerum perferendis ipsam ullam doloribus beatae esse facilis quae sit excepturi expedita non, sunt accusantium magnam? Animi nesciunt nostrum eligendi iusto voluptatum hic qui. Quod distinctio qui nobis et doloremque. Fuga, itaque? Laborum dignissimos nobis quaerat optio voluptatum similique unde, neque cupiditate, vel, fugiat dolore? Accusantium neque deserunt ducimus enim, illum laborum magni ipsam eos optio aspernatur nam necessitatibus quod natus, dolor laboriosam illo velit.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
+			
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam molestias. Fuga similique, dolor tempora rerum perferendis ipsam ullam doloribus beatae esse facilis quae sit excepturi expedita non, sunt accusantium magnam? Animi nesciunt nostrum eligendi iusto voluptatum hic qui. Quod distinctio qui nobis et doloremque. Fuga, itaque? Laborum dignissimos nobis quaerat optio voluptatum similique unde, neque cupiditate, vel, fugiat dolore? Accusantium neque deserunt ducimus enim, illum laborum magni ipsam eos optio aspernatur nam necessitatibus quod natus, dolor laboriosam illo velit.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
+			
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam molestias. Fuga similique, dolor tempora rerum perferendis ipsam ullam doloribus beatae esse facilis quae sit excepturi expedita non, sunt accusantium magnam? Animi nesciunt nostrum eligendi iusto voluptatum hic qui. Quod distinctio qui nobis et doloremque. Fuga, itaque? Laborum dignissimos nobis quaerat optio voluptatum similique unde, neque cupiditate, vel, fugiat dolore? Accusantium neque deserunt ducimus enim, illum laborum magni ipsam eos optio aspernatur nam necessitatibus quod natus, dolor laboriosam illo velit.</p>
+		</aside>
+		-->
+		<div class="titulo">
+			<h1 id="cont">Contacto</h1>
+		</div>
+		<div id="spacer" class="row justify-content-md-center">
+			<div class="col col-lg-2 popover__wrapper">
+				<a href="https://www.linkedin.com/in/germanmacchia/" target="_blank">
+					<img class="icon" src="./assets/ing.png">
+				</a>
+				<div class="popover__content">
+					<p class="popover__message">Linked In</p>
+				</div>
+			</div>
+			<div class="col col-lg-2 popover__wrapper">
+				<a href="https://medium.com/@germanmacchia/" target="_blank">
+					<img class="icon" src="./assets/medium.png">
+				</a>
+				<div class="popover__content">
+					<p class="popover__message">Medium</p>
+				</div>
+			</div>
+			<div class="col col-lg-2 popover__wrapper">
+				<a>
+					<img class="icon" src="./assets/github.png">
+				</a>
+				<div class="popover__content">
+					<p class="popover__message">GitHub</p>
+				</div>
+			</div>
+			<div class="col col-lg-2 popover__wrapper">
+				<a href="https://drive.google.com/file/d/1rjR3EzNQ0Bron4Ywq4lQkX6N_iALUT9k/view?usp=sharing" target="_blank">
+					<img class="icon" src="./assets/cv.png">
+				</a>
+				<div class="popover__content">
+					<p class="popover__message">CV</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<!-- Modal SAP -->
+	<div class="modal fade" id="sapModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal de SAP</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">SAP</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal Flutter -->
+	<div class="modal fade" id="flutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal de Flutter</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal JAVA -->
+	<div class="modal fade" id="javaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal de JAVA</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal REACT -->
+	<div class="modal fade" id="reactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal de REACT</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">react</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</html>
