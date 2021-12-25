@@ -1,6 +1,20 @@
+
+@media (max-width: 800px) { 
+	#sunf{	
+		padding-left: 3rem;
+	}
+	aside {
+		height: 24rem;
+	}
+}
+
+
 @media (min-width: 801px) { 
 	#sunf{	
 		padding-left: 3rem;
+	}
+	aside {
+		height: 24rem;
 	}
 }
 
@@ -8,12 +22,18 @@
 	#sunf{
 		padding-left: 10rem;
 	}
+	aside {
+		height: 26rem;
+	}
 }
 
 @media (min-width: 1288px) { 
 	#sunf{
 		padding-left: 24rem;
 	}	
+	aside {
+		height: 28rem;
+	}
 }
 
 
@@ -27,5 +47,9 @@
 @media (min-width: 1900px) { 
 	#sunf{
 		padding-left: 49rem;
+	}
+	aside{
+		width: 80rem;
+		height: 31rem;
 	}
 }

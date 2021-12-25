@@ -42,6 +42,11 @@ h2 {
 	font-size: 2.5em;
 }
 
+h3 {
+	font-weight: 300;
+	font-size: 1.7em;
+}
+
 h5 {
 	color:black;
 }
@@ -50,6 +55,7 @@ p {
 	font-family: sans-serif;
 	font-weight: 300;
 	line-height: 1.42;
+	font-size: 1em;
 }
 
 .btn {
@@ -62,10 +68,10 @@ p {
 }
 
 aside {
-	width: 62vw;
-	height: 32vw;
-	padding:  2rem;
-	text-align: justify;
+	width: 74rem;
+	height: 31rem;
+	padding:  3rem;
+	text-align: left;
 	overflow: auto;
 }
 
@@ -82,7 +88,15 @@ aside p {
 	border: solid;
 	border-color: whitesmoke;
 	background-color:rgb(5, 3, 4);
+	height: 20.5em;
+
 }
+
+#sunf{
+	height: 11rem;
+	width: auto;	
+}
+
 
 #foto{
 	height: 20em;
