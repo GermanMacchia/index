@@ -342,11 +342,11 @@ a:hover{
 	}
 }
 
-@media (max-width: 439px) { 
+@media (max-width: 461px) { 
 
 	aside {
 		height: 15rem;
-		width: 20rem;
+		width: 21rem;
 		padding: 1rem;
 		margin-top: 1rem;
 	}
@@ -374,7 +374,7 @@ a:hover{
 	}
 }
 
-@media (min-width: 440px) { 
+@media (min-width: 462px) { 
 	#sunf{	
 		padding-left: 3rem;
 	}
