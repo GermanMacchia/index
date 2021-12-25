@@ -122,6 +122,9 @@ hr{
 	padding-top: 5px;
 }
 
+.barra{
+	min-width: 340px;
+}
 .pin{
 	height: 4.7rem;
 	width: auto;
