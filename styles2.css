@@ -1,0 +1,31 @@
+@media (min-width: 801px) { 
+	#sunf{	
+		padding-left: 3rem;
+	}
+}
+
+@media (min-width: 1022px) { 
+	#sunf{
+		padding-left: 10rem;
+	}
+}
+
+@media (min-width: 1288px) { 
+	#sunf{
+		padding-left: 24rem;
+	}	
+}
+
+
+@media (min-width: 1610px) { 
+	#sunf{
+		padding-left: 44rem;
+	}
+}
+
+
+@media (min-width: 1900px) { 
+	#sunf{
+		padding-left: 49rem;
+	}
+}
