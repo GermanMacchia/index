@@ -345,8 +345,8 @@ a:hover{
 @media (max-width: 461px) { 
 
 	aside {
-		height: 15rem;
-		width: 21rem;
+		height: 12rem;
+		width: 22.5rem;
 		padding: 1rem;
 		margin-top: 1rem;
 	}
@@ -362,7 +362,7 @@ a:hover{
 	}
 	#recuadro{
 		display: block;
-		height: 26em;
+		height: 23em;
 	}
 	#tira{
 		padding: 0;
