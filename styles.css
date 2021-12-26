@@ -48,8 +48,11 @@ h3 {
 	padding-left: 7rem;
 }
 
-
-h5, .modaltxt2 {
+h5{
+	color: #14213d;
+	padding-left: 3.2rem;
+}
+.modaltxt2 {
 	color: #14213d;
 	padding-left: 3.2rem;
 }
