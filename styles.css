@@ -48,8 +48,32 @@ h3 {
 	padding-left: 7rem;
 }
 
-h5 {
-	color:black;
+
+h5, .modaltxt2 {
+	color: #14213d;
+	padding-left: 3.2rem;
+}
+
+.modaltxt{
+	color: #14213d;	
+
+}
+
+.modaltxt3{
+	color: black;
+}
+
+ul { 
+     list-style:  none;
+     padding:  0;
+}
+
+li:before {
+     content:  url('./assets/tick.png');
+     display:  inline-block;
+     vertical-align:  middle;
+     margin-right:   1em;
+     margin-top: 0.2em;
 }
 
 p {
@@ -59,8 +83,16 @@ p {
 	font-size: 1em;
 }
 
+.modal{
+	color: black;
+	text-align: left;
+	font-size: 1.3rem;
+}
+
+
+
 .btn {
-	background: rgb(188 87 36);
+	background: #f4a261;
 	color: rgb(255 255 255);
 	text-decoration: none;
 	display: inline-block;
@@ -433,6 +465,6 @@ a:hover{
 	}
 	aside{
 		width: 80rem;
-		height: 31rem;
+		height: 30rem;
 	}
 }
