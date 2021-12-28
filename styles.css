@@ -71,7 +71,7 @@ ul {
      padding:  0;
 }
 
-li:before {
+.bullet:before {
      content:  url('./assets/tick.png');
      display:  inline-block;
      vertical-align:  middle;
