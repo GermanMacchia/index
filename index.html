@@ -49,8 +49,8 @@
 				</aside>
 			</div>
 			<div id="tira">
-				<img class="pin mod" src="./assets/angular.png"  data-bs-toggle="modal" data-bs-target="">
-				<img class="pin mod jav" src="./assets/spring.png"  data-bs-toggle="modal" data-bs-target="">	
+				<img class="pin mod" src="./assets/angular.png"  data-bs-toggle="modal" data-bs-target="#angModal">
+				<img class="pin mod jav" src="./assets/spring.png"  data-bs-toggle="modal" data-bs-target="#springModal">	
 				<img class="pin mod" src="./assets/react.png"  data-bs-toggle="modal" data-bs-target="#reactModal">
 				<img class="pin mod" src="./assets/node.png"  data-bs-toggle="modal" data-bs-target="#nodeModal">
 				<img class="pin mod" src="./assets/NET.png"  data-bs-toggle="modal" data-bs-target="#netModal"> 
@@ -90,9 +90,7 @@
 						</a>
 					</div>
 					<div class="carousel-item">
-						<a href="" target="_blank">
-							<img class="blg" src="./assets/Patrones.jpg" class="d-block w-100" alt="Patrones">
-						</a>
+							<img class="blg hover" src="./assets/Patrones.jpg" class="d-block w-100" alt="Patrones"  data-bs-toggle="modal" data-bs-target="#progressModal">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#blgdata" data-bs-slide="prev">
@@ -107,6 +105,16 @@
 			<div class="titulo">
 				<h1 id="proy">Proyectos</h1>
 			</div>
+
+
+
+
+
+
+
+
+
+
 			<!-- --------TARJETAS-------------------->
 			<ul id="cards">
 				<li  class="card" id="card_1">
@@ -115,7 +123,7 @@
 							<h2>Mis Libros App (Frontend)</h2>
 							<h4>[HEROKU]</h4>
 							<p>Gestor de prestamos elaborado en ReactJS</p>
-							<p><a href="./pages/misLibrosftn.html" class="btn btn-info" target="_blank">DOC</a>
+							<p><a data-bs-toggle="modal" data-bs-target="#progressModalHeroku" href="./pages/misLibrosftn.html" class="btn btn-info" target="_blank">DOC</a>
 							<a href="https://mis-libros.herokuapp.com" class="btn btn-success" target="_blank">APP</a></p>
 						</div>
 						<figure>
@@ -129,7 +137,7 @@
 							<h2>Mis Libros App (Backend)</h2>
 							<h4>[HEROKU]</h4>
 							<p>API rest de Mis Libros App</p>
-							<p><a href="./pages/misLibrosbck.html" class="btn btn-info" target="_blank">DOC</a>
+							<p><a data-bs-toggle="modal" data-bs-target="#progressModal" class="btn btn-info" target="_blank">DOC</a>
 							<a href="https://github.com/GermanMacchia/Mislibros_BckEnd" class="btn btn-success" target="_blank">Código</a></p>
 						</div>
 						<figure>
@@ -143,7 +151,7 @@
 							<h2>Seguimiento ClickShop</h2>
 							<h4>[SOMEE]</h4>
 							<p>Seguimiento de pedidos gestionados por un proveedor elaborado en ASP.NET</p>
-							<p><a href="./pages/seguimiento.html" class="btn btn-info" target="_blank">DOC</a>
+							<p><a data-bs-toggle="modal" data-bs-target="#progressModal" class="btn btn-info" target="_blank">DOC</a>
 							<a href="http://seguimi.somee.com/" class="btn btn-success" target="_blank">APP</a></p>
 						</div>
 						<figure>
@@ -154,12 +162,12 @@
 				<li class="card" id="card_4">
 					<div class="card__content">
 						<div>
-							<h2>Card Four</h2>
+							<h2>Proyecto Spring - Angular</h2>
 							<p>JAVA</p>
-							<p><a href="#top" class="btn btn--accent">Read more</a></p>
+							<!--<p><a href="#top" class="btn btn--accent">Read more</a></p>-->
 						</div>
 						<figure>
-							<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description">
+							<img src="./assets/work2.gif" alt="Image description">
 						</figure>
 					</div>
 				</li>
@@ -178,6 +186,14 @@
 				</li>-->
 			</ul>
 		</main>
+
+
+
+
+
+
+
+		<!---CONTACTO-->
 		<div class="titulo">
 			<h1 id="cont">Contacto</h1>
 		</div>
@@ -221,6 +237,16 @@
 			&copy; 2021 Germán O. Macchia
 		</div>
 	</footer>
+
+
+
+
+
+
+
+
+
+
 	<!-- Modal SAP -->
 	<div class="modal fade" id="sapModal" tabindex="-1" >
 		<div class="modal-dialog">
@@ -374,6 +400,8 @@
 				<div class="modal-header">
 					<h4 class="modal-title center" id="exampleModalLabel">ANGULAR</h4>
 				</div>
+				<img src="assets/work1.gif">
+				<!--
 				<div class="modal-body">
 					<b class="colorW">Cursos</b><br/><br/>
 					<ul>
@@ -389,13 +417,74 @@
 							<li class="bullet colorW"><a class="modaltxt3" href="#card_1">Mis Libros APP (BACKEND)</a></li>
 						</ul>
 					</ul>	
-				</div>
+				</div>-->
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Modal SPRING -->
+	<div class="modal fade" id="springModal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title center" id="exampleModalLabel">SPRING</h4>
+				</div>
+				<img src="assets/work1.gif">
+				<!--
+				<div class="modal-body">
+					<b class="colorW">Cursos</b><br/><br/>
+					<ul>
+						<li class="bullet colorW">DIPLOMATURA EN PROGAMACIÓN WEB 
+						<section style="padding-left: 3.2rem; margin-bottom: 1rem;">FULL STACK CON REACT JS</section></li>
+							<h5>UTN Buenos Aires 2020</h5>
+							<h5 class="colorW" ><a class="modaltxt" target="_blank" href="https://sigead.utnba.centrodeelearning.com/alumnos/validar_certificado">Validar certificado</a>
+							CER-30OQSI0U-521938</h5><br>
+						</li>
+						<hr>
+						<b class="colorW">Proyectos</b><br/><br/>
+						<ul>
+							<li class="bullet colorW"><a class="modaltxt3" href="#card_1">Mis Libros APP (BACKEND)</a></li>
+						</ul>
+					</ul>	
+				</div>-->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal In Progress -->
+	<div class="modal fade" id="progressModal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<img src="assets/work5.gif">
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal In Progress2 -->
+	<div class="modal fade" id="progressModalHeroku" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<img src="./assets/aler.png" style="height: 9rem; width:auto;">
+					<img style="width:40%;" src="assets/work5.gif"><br/>
+					<b class="text-white">HEROKU pone las aplicaciones "a dormir".</b> 
+					<b class="text-white">Muchas veces requiere ser llamada dos veces para que abra correctamente!</b>
+				</div>
+
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Modal HERRAMIENTAS -->
 	<div class="modal fade" id="herrModal" tabindex="-1">
 		<div class="modal-dialog">

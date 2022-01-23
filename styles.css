@@ -19,6 +19,9 @@ main {
 	margin: 0 auto;
 }
 
+.hover:hover{
+	cursor: pointer;
+}
 .titulo {
 	height: 30vh;
 	display: grid;
