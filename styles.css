@@ -104,6 +104,13 @@ section{
 	margin-right:   1em;
 	margin-top: 0.2em;
 }
+.up{
+
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 2.5rem;
+	margin-left: -8rem;
+}
 
 #folder{
 	height: 60px;
