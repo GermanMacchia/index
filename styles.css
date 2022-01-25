@@ -84,7 +84,7 @@ h5{
 
 .modal-content{
 	background-image: url("./assets/236242.jpg");;
-	border: solid aliceblue;
+	border: solid #f0f8ff;
 }
 
 ul { 
@@ -103,6 +103,50 @@ section{
 	vertical-align:  middle;
 	margin-right:   1em;
 	margin-top: 0.2em;
+}
+
+#folder{
+	height: 60px;
+}
+#switch{
+	height: 43px;
+}
+#doc{
+	height: 50px;
+
+}
+
+#folder:hover{
+	animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+
+#doc:hover{
+	cursor: pointer;
+  	animation: hithere 1s ease infinite;
+}
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+}
+#switch:hover{
+	animation: pulse 1s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
 }
 
 p {
