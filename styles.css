@@ -208,14 +208,17 @@ p {
 }
 
 aside {
-	width: 74rem;
+	width: 78rem;
 	height: 27rem;
-	padding:  3rem;
+	padding: 2rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
 	text-align: left;
 	overflow: auto;
-	padding-left: 7rem;
+	padding-left: 9rem;
 	text-align: justify;
-	padding-right: 7rem
+	padding-right: 4rem;
+	scroll-margin-top: 20px;
 }
 
 #spacer{
@@ -235,12 +238,12 @@ aside {
 	width: auto;
 }
 
-#tira{
+#tiraPin{
 	display: flex;
 	flex-direction: row;
 
 	margin-top: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 180px;
 
 }	
 
@@ -422,12 +425,13 @@ a:hover{
 	--card-height: 40vw;
 	--card-margin: 4vw;
 	--card-top-offset: 1em;
-	--numcards: 5;
+	--numcards: 4;
 	--outline-width: 0px;
 }
 
 #mainline{
 	display: flex;
+	text-align: left;
 }
 
 
@@ -462,9 +466,6 @@ a:hover{
 	--index: 4;
 }
 
-#card_5 {
-	--index: 5;
-}
 
 
 .card {
@@ -476,7 +477,7 @@ a:hover{
 @supports (animation-timeline: works) {
 
 	@scroll-timeline cards-element-scrolls-in-body {
-		source: selector(body);
+		source: selector();
 		scroll-offsets:
 			/* Start when the start edge touches the top of the scrollport */
 			selector(#cards) start 1,
@@ -495,10 +496,10 @@ a:hover{
 	}
 	
 	.card__content {
-		transform-origin: 50% 0%;	border-left: solid 4px aliceblue ;
-	border-bottom: solid 4px aliceblue;
+		transform-origin: 50% 0%;	
+		border-left: solid 4px aliceblue ;
+		border-bottom: solid 4px aliceblue;
 		will-change: transform;
-
 		--duration: calc(var(--reverse-index0) * 1s);
 		--delay: calc(var(--index0) * 1s);
 
@@ -518,6 +519,119 @@ a:hover{
 	}
 }
 
+@media (min-width: 300px) and (max-width: 450px){
+
+	#foto{
+		height: 12rem;
+	}
+	aside {
+		height: 12rem;
+		width: 19.5rem;
+		padding: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 5px;
+	}
+	p{
+		font-size: medium;
+		margin-bottom: 14px;
+		text-align: left;
+		text-indent: 30px;
+	}
+	h2{
+		font-size: 2rem;
+	}
+	h3{
+		padding: 0;
+		font-size: 1.5em;
+	}
+	#foto{
+		height: 12rem;
+		border: solid 2px aliceblue;
+	}
+	#mainline{
+		font-size: larger;
+		margin-bottom: 18px;
+	}
+	#tiraPin{
+		display: block;
+		margin-bottom: 25px;
+	}
+	#recuadro{
+		display: block;
+		height: 22.5em;
+	}
+
+	.pin{
+		height: 2rem;
+		width: auto;
+		margin: 1rem;
+	}
+	#letter{
+		height: 40px;
+		margin-left: 25px;
+	}
+	.barra{
+		min-width: 260px;
+	}
+	.tira{
+		font-size: large;
+		padding: 5px !important;
+	}
+	#flechitas{
+		display: none;		
+	}
+	.iconop{
+		width: 11.5rem;
+	}
+	#doc, #switch {
+		height: 2.5rem;
+	}
+	#folder{
+		height: 3rem;
+	}
+	.up{
+		position: sticky;
+		top: 1.5rem;
+		margin-left: -1.8rem;
+
+	}
+	#arr{
+		height: 40px;
+	}
+	.blg {
+	height: 21rem;
+	width: auto;
+	border: solid 3px #dcdfe0;
+	border-radius: 5%;
+	margin-bottom: 173px;
+	}	
+	.card{
+		padding: 0px;
+	}
+	.card__content{
+		padding: 20px;
+	}
+	figure{
+		height: 150px;
+	}
+	.p_card{
+		font-size: smaller;
+		text-indent: 0px;
+	}
+	#cards{
+		grid-template-rows: none;
+		gap: 1.5rem;
+		width: 19.5rem;
+		margin-left: 32px;
+	}
+	#worke{
+		height: 6.5rem;
+	}
+	.contacto {
+  		height: 25vh
+	}
+}
+/*
 @media (max-width: 461px) { 
 
 	aside {
@@ -610,3 +724,4 @@ a:hover{
 		height: 27rem;
 	}
 }
+*/

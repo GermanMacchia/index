@@ -7,22 +7,22 @@
 		<link href="styles.css" rel="stylesheet"/>	
 		<link href="./assets/id-card.png" rel="shortcut icon">
 		<script type="text/javascript" src="js/bootstrap.js" /></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Germán Osses Macchia</title>
 	</head>		
 	<header  class="d-flex">
 		<div class="d-inline-flex barra">
-			<div class=" p-4 bd-highlight">
+			<div class=" p-4 bd-highlight tira">
 				<a href="#blog">
 					<h4> Blog</h4>
 				</a>
 			</div>
-			<div class="p-4 bd-highlight">
+			<div class="p-4 bd-highlight tira">
 				<a href="#proy">
 					<h4>Proyectos</h4>
 				</a>
 			</div>
-			<div class="p-4 bd-highlight">
+			<div class="p-4 bd-highlight tira">
 				<a href="#cont">
 					<h4>Contacto</h4>
 				</a>
@@ -39,23 +39,21 @@
 			
 		<main>
 			<div id="mainline">
-				<div style="text-align: left;">
-					<br/>
-					<h2><b>¡Hola!</b></h2>
-					<h3><b>Mi nombre es Germán...</b></h3><br/>
-				</div>				
+				<br/>
+				<h3><b>Acerca de mi</b></h3><br/>	
 			</div>
 			<div id="recuadro">
 				<img src="./assets/German.png" id="foto" alt="Foto">
 				<aside>
-					<p>&nbsp &nbsp &nbsp Soy Analista Programador del instituto ORT y actualmente continuando la tecnicatura de Análista de Sistemas. Este recorrido me fue otorgando conocimientos sólidos en programación Java, Base de Datos,  Sistemas Operativos, UML y Sistemas Administrativos, entre otras cosas.</p>
-					<p>&nbsp &nbsp &nbsp Habiendo realizado anteriormente cursos y diplomaturas relacionados al desarrollo IT, he logrado desarrollar paginas web y pequeñas aplicaciones en JavaScript, HTML, CSS, MySQL o MongoDB. Me dediqué en profundidad sobre todo en las herramientas React Js y Node Js, utilizando Redux, Thunk y Redux-Sagas entre otras librerías.</p>
-					<p>&nbsp &nbsp &nbsp También tengo conocimientos del framework ASP .net, C#, ABAP, Git, DevOps y metodologías ágiles. En mis estudios, pude implementar los conceptos de programación orientado a objetos, modificadores de acceso, interfaces, manejo de excepciones, tipos de datos abstractos, etc.</p> 
-					<p>&nbsp &nbsp &nbsp Cargo la suerte de haber cursado inglés durante mucho tiempo y tengo un muy buen nivel de ingles (al menos de upper intermediate). Esto me fue de gran utilidad al investigar herramientas y soluciones, tanto de documentación oficial como de otras fuentes. Aunque aún no tengo certificación formal, entre mis objetivos a mediano plazo está el ir por un Advanced (CAE).</p>
+					<p>Analista Programador del instituto ORT y actualmente continuando la tecnicatura de Análista de Sistemas.</p>
+					<p>En mis estudios pude implementar los conceptos de POO, modificadores de acceso, interfaces, manejo de excepciones, tipos de datos abstractos, etc.</p> 
+					<p>Tengo conocimientos de UML, DER, GIT, programación Java, C#, ABAP, DevOps, patrones de diseño y metodologías ágiles.</p>
+					<p>Habiendo realizado anteriormente cursos y diplomaturas relacionados al desarrollo IT, comencé desarrollando paginas web y pequeñas aplicaciones en JavaScript, HTML, CSS, MySQL o MongoDB. Me dediqué en profundidad en las herramientas React Js y Node Js, utilizando Redux, Thunk y Redux-Sagas entre otras librerías. </p>
+					<p>Cursé inglés durante mucho tiempo y tengo un buen nivel de ingles (Upper intermediate). Esto me fue de gran utilidad al investigar herramientas y soluciones, tanto de documentación oficial como de otras fuentes. Aunque aún no tengo certificación formal, entre mis objetivos a mediano plazo está ir por un Advanced (CAE).</p>
 					<!--<p>&nbsp &nbsp &nbsp A la fecha, dedico parte de mi tiempo a comprender de forma integra el sistema SAP y el desarrollo en ABAP 4 para las implementaciones en este reconocido ERP. La estructura y complejidad de este sistema me implican nuevos desafíos y amplia mi perspectiva acerca de la integridad, seguridad y administración de datos dentro de las implementaciones del software.</>-->
 				</aside>
 			</div>
-			<div id="tira">
+			<div id="tiraPin">
 				<img class="pin mod" src="./assets/angular.png"  data-bs-toggle="modal" data-bs-target="#angModal">
 				<img class="pin mod jav" src="./assets/spring.png"  data-bs-toggle="modal" data-bs-target="#springModal">	
 				<img class="pin mod" src="./assets/react.png"  data-bs-toggle="modal" data-bs-target="#reactModal">
@@ -63,14 +61,14 @@
 				<img class="pin mod" src="./assets/NET.png"  data-bs-toggle="modal" data-bs-target="#netModal"> 
 				<img class= "pin mod" src="./assets/sap.png" data-bs-toggle="modal" data-bs-target="#sapModal">
 				<img class="pin mod" src="./assets/set3.png"  data-bs-toggle="modal" data-bs-target="#herrModal">
-				<div>
+				<div id="flechitas">
 					<img class="pin arrowSliding delay1" src="./assets/arrow.png"  id="f2" data-bs-toggle="modal" > 	
 					<img class="pin arrowSliding delay2" src="./assets/arrow.png"  id="f2" data-bs-toggle="modal" > 					
 				</div>			
 			</div>
 			</div>
 			<div class="d-flex justify-content-start up" >
-				<a href="#top" ><img  src="assets/up.svg" ></a>				
+				<a href="#top" ><img  id="arr" src="assets/up.svg" ></a>				
 			</div>
 			<div class="titulo">
 				<h1 id="blog">Blog</h1>
@@ -131,12 +129,14 @@
 				<li  class="card" id="card_1">
 					<div class="card__content">
 						<div>
-							<h2>Mis Libros App (Frontend)</h2>
-							<h4>[HEROKU]</h4>
-							<p>Gestor de prestamos elaborado en ReactJS</p>
-							<p><a data-bs-toggle="modal" data-bs-target="#progressModalHeroku" target="_blank"><img id="doc" src='./assets/doc2.svg'></a>
-							<a href="https://mis-libros.herokuapp.com"  target="_blank"><img id="switch" src='./assets/switch.svg'></a>
-							<a href="https://github.com/GermanMacchia/Mis_libros-3.0-Sagas" target="_blank"><img id="folder" src='./assets/folder2.svg'></a></p>
+							<h2><b>Mis Libros App (Frontend)</b></h2>
+							<h2>[HEROKU]</h2>
+							<p class="p_card">Gestor de prestamos elaborado en ReactJS</p>
+							<span class="iconop">
+								<a data-bs-toggle="modal" data-bs-target="#progressModalHeroku" target="_blank"><img id="doc" src='./assets/doc2.svg'></a>
+								<a href="https://mis-libros.herokuapp.com"  target="_blank"><img id="switch" src='./assets/switch.svg'></a>
+								<a href="https://github.com/GermanMacchia/Mis_libros-3.0-Sagas" target="_blank"><img id="folder" src='./assets/folder2.svg'></a>
+							</span>
 						</div>
 						<figure>
 							<img src="./assets/mislibros1.jpg" alt="Mis Libros">
@@ -146,12 +146,14 @@
 				<li class="card" id="card_2">
 					<div class="card__content">
 						<div>
-							<h2>Mis Libros App (Backend)</h2>
-							<h4>[HEROKU]</h4>
-							<p>API rest de Mis Libros App</p>
-							<p><a data-bs-toggle="modal" data-bs-target="#progressModalHeroku" target="_blank"><img id="doc" src='./assets/doc2.svg'></a>
-							<a href="https://mis-libros.herokuapp.com"  target="_blank"><img id="switch" src='./assets/switch.svg'></a>
-							<a href="https://github.com/GermanMacchia/Mislibros_BckEnd" target="_blank"><img id="folder" src='./assets/folder2.svg'></a></p>
+							<h2><b>Mis Libros App (Backend)</b></h2>
+							<h2>[HEROKU]</h2>
+							<p class="p_card">API rest de Mis Libros App</p>
+							<span class="iconop">
+								<a data-bs-toggle="modal" data-bs-target="#progressModalHeroku" target="_blank"><img id="doc" src='./assets/doc2.svg'></a>
+								<a href="https://mis-libros.herokuapp.com"  target="_blank"><img id="switch" src='./assets/switch.svg'></a>
+								<a href="https://github.com/GermanMacchia/Mislibros_BckEnd" target="_blank"><img id="folder" src='./assets/folder2.svg'></a>
+							</span>
 						</div>
 						<figure>
 							<img src="./assets/backend.png" alt="NodeBackend">
@@ -161,12 +163,14 @@
 				<li class="card" id="card_3">
 					<div class="card__content">
 						<div>
-							<h2>Seguimiento ClickShop</h2>
-							<h4>[SOMEE]</h4>
-							<p>Seguimiento de pedidos gestionados por un proveedor elaborado en ASP.NET</p>
-							<p><a data-bs-toggle="modal" data-bs-target="#progressModal" target="_blank"><img id="doc" src='./assets/doc2.svg'></a>
-							<a href="http://seguimi.somee.com/"  target="_blank"><img id="switch" src='./assets/switch.svg'></a>
-							<a href="https://github.com/GermanMacchia/ClickShop" target="_blank"><img id="folder" src='./assets/folder2.svg'></a></p>
+							<h2><b>ClickShop Pedidos</b></h2><br/>
+							<h2>[SOMEE]</h2><br/>
+							<p class="p_card">Seguimiento de envíos elaborado en ASP.NET</p>
+							<span class="iconop">
+								<a data-bs-toggle="modal" data-bs-target="#progressModal" target="_blank"><img id="doc" src='./assets/doc2.svg'></a>
+								<a href="http://seguimi.somee.com/"  target="_blank"><img id="switch" src='./assets/switch.svg'></a>
+								<a href="https://github.com/GermanMacchia/ClickShop" target="_blank"><img id="folder" src='./assets/folder2.svg'></a>
+							</span>
 						</div>
 						<figure>
 							<img src="./assets/Seguimiento.jpg" alt="Seguimiento">
@@ -177,11 +181,11 @@
 					<div class="card__content">
 						<div>
 							<h2>Proyecto Spring - Angular</h2>
-							<p>JAVA</p>
+							<p class="p_card">JAVA</p>
 							<!--<p><a href="#top" class="btn btn--accent">Read more</a></p>-->
 						</div>
 						<figure>
-							<img src="./assets/work2.gif" alt="Image description">
+							<img id="worke" src="./assets/work2.gif" alt="Image description">
 						</figure>
 					</div>
 				</li>
@@ -208,7 +212,7 @@
 
 
 		<!---CONTACTO-->
-		<div class="titulo">
+		<div class="titulo contacto">
 			<h1 id="cont">Contacto</h1>
 		</div>
 		<div id="spacer" class="row justify-content-md-center">
