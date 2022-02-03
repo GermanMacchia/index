@@ -627,7 +627,8 @@ a:hover{
 		height: 6.5rem;
 	}
 	.contacto {
-  		height: 25vh
+  		height: 25vh;
+		margin-top: 3rem;
 	}
 	td{
 		min-width: 11.5rem;
