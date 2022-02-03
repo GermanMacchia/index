@@ -242,7 +242,7 @@ aside {
 	display: flex;
 	flex-direction: row;
 
-	margin-top: 20px;
+	margin-top: 40px;
 	margin-bottom: 180px;
 
 }	
@@ -296,9 +296,10 @@ a{
 	color: azure;
 	text-decoration: none;
 }
-a:hover{
-	color: #ff5c8a;
+.nav:hover{
+	color: #23d3e6;
 }
+
 
 .icon{
 	height: 4rem;
@@ -308,11 +309,9 @@ a:hover{
 
 .mod:hover{
 	cursor: pointer;
-    	box-shadow: 0px 0px 10px #5089C6;
-	border-radius: 50%;
-	
+    	box-shadow: 0px 10px #5089C6;
+	border-radius: 50%;	
 }
-
 
 
 .menu{
@@ -346,7 +345,8 @@ a:hover{
   transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
 }
 .popover__message {
-  text-align: center;
+	text-align: center;
+	text-indent: none;
 }
 
 .card {
@@ -432,6 +432,7 @@ a:hover{
 #mainline{
 	display: flex;
 	text-align: left;
+	margin: 40px;
 }
 
 
@@ -560,7 +561,6 @@ a:hover{
 		display: block;
 		height: 22.5em;
 	}
-
 	.pin{
 		height: 2rem;
 		width: auto;
@@ -591,7 +591,7 @@ a:hover{
 	}
 	.up{
 		position: sticky;
-		top: 1.5rem;
+		top: 1.7rem;
 		margin-left: -1.8rem;
 	}
 	#arr{
@@ -628,13 +628,23 @@ a:hover{
 	}
 	.contacto {
   		height: 25vh;
-		margin-top: 4.5rem;
+		margin-top: 4rem;
 	}
 	td{
 		min-width: 11.5rem;
 	}
 	ul,h5{
 		font-size: medium;
+	}
+	#spacer{
+		margin: 1rem;
+		margin-top: 1rem;
+		width: 19rem;
+		margin-top: 10.5rem
+	}
+	.popover__message{
+		text-indent: 0px;
+		margin: 0 2rem 0 2rem;
 	}
 }
 /*
