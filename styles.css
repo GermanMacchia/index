@@ -593,7 +593,6 @@ a:hover{
 		position: sticky;
 		top: 1.5rem;
 		margin-left: -1.8rem;
-
 	}
 	#arr{
 		height: 40px;
@@ -629,6 +628,12 @@ a:hover{
 	}
 	.contacto {
   		height: 25vh
+	}
+	td{
+		min-width: 11.5rem;
+	}
+	ul,h5{
+		font-size: medium;
 	}
 }
 /*
