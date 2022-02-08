@@ -545,7 +545,7 @@ a{
 	}
 	#tiraPin{
 		display: block;
-		margin-bottom: 50px;
+		margin-bottom: 60px;
 	}
 	#recuadro{
 		display: block;
@@ -625,7 +625,7 @@ a{
 	}
 	#spacer{
 		width: 19rem;
-		margin: 7rem 1rem 7.8rem 1rem;
+		margin: 7rem 1rem 7.5rem 1rem;
 	}
 	.popover__message{
 		text-indent: 0px;
