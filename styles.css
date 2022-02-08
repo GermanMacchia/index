@@ -620,10 +620,8 @@ a{
 		font-size: medium;
 	}
 	#spacer{
-		margin: 1rem;
-		margin-top: 1rem;
 		width: 19rem;
-		margin-top: 10.5rem
+		margin: 4.5rem 1rem 8.5rem 1rem;
 	}
 	.popover__message{
 		text-indent: 0px;
