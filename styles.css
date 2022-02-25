@@ -20,6 +20,11 @@ main {
 	margin: 20px auto;
 	background-image: url("./assets/black_scales.png");
 }
+#msgtome{
+	position: fixed;
+	top: 42px;
+	right: 165px;
+}
 
 .hover:hover{
 	cursor: pointer;
