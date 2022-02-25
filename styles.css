@@ -11,7 +11,7 @@ body {
 	text-align: center;
 	background-image: url("./assets/black_scales.png");
 	font-size: calc(1em + 0.5vw);
-
+	font-family: 'Work Sans', sans-serif;
 }
 
 header,
@@ -190,7 +190,6 @@ section{
 }
 
 p {
-	font-family: sans-serif;
 	font-weight: 300;
 	line-height: 1.42;
 	font-size: 1.5rem;
@@ -217,11 +216,9 @@ p {
 aside {
 	width: 78rem;
 	height: 27rem;
-	padding: 2rem;
 	padding-right: 2rem;
 	padding-left: 2rem;
 	text-align: left;
-	overflow: auto;
 	padding-left: 9rem;
 	text-align: justify;
 	padding-right: 4rem;
