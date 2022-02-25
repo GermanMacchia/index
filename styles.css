@@ -519,10 +519,11 @@ a{
 
 	aside {
 		height: 12rem;
-		width: 21.5rem;
+		width: 20.5rem;
 		padding: 1rem;
 		margin-top: 1rem;
 		margin-bottom: 5px;
+		overflow: scroll;
 	}
 	p{
 		font-size: medium;
@@ -530,8 +531,11 @@ a{
 		text-align: left;
 		text-indent: 30px;
 	}
+	h1{
+		font-size: 3em;
+	}
 	h2{
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	h3{
 		padding: 0;
@@ -558,8 +562,14 @@ a{
 		width: auto;
 		margin: 1rem;
 	}
+
+	#msgtome{
+		top: 20px;
+		right: 18px;
+	}
+
 	#letter{
-		height: 40px;
+		height: 26px;
 		margin-left: 25px;
 	}
 	.barra{
@@ -571,6 +581,7 @@ a{
 	}
 	.iconop{
 		width: 11.5rem;
+		margin: 20px;
 	}
 	#doc, #switch {
 		height: 2.5rem;
@@ -587,7 +598,7 @@ a{
 		height: 40px;
 	}
 	.blg {
-	height: 21rem;
+	height: 18rem;
 	width: auto;
 	border: solid 3px #dcdfe0;
 	border-radius: 5%;
@@ -598,6 +609,10 @@ a{
 	}
 	.card__content{
 		padding: 20px;
+		display:block;
+	}
+	.card__content2{
+		display: inline-block !important;
 	}
 	figure{
 		height: 150px;
@@ -609,7 +624,7 @@ a{
 	#cards{
 		grid-template-rows: none;
 		gap: 1.5rem;
-		width: 19.5rem;
+		width: 16.5rem;
 		margin-left: 32px;
 	}
 	#worke{
@@ -634,99 +649,6 @@ a{
 		margin: 0 2rem 0 2rem;
 	}
 }
-/*
-@media (max-width: 461px) { 
 
-	aside {
-		height: 12rem;
-		width: 19.5rem;
-		padding: 1rem;
-		margin-top: 1rem;
-	}
-	h3{
-		padding: 0;
-		font-size: 1.5em;
-	}
-	#foto{
-		height: 12rem;
-	}
-
-	#recuadro{
-		display: block;
-		height: 22.5em;
-	}
-	#tira{
-		padding: 0;
-	}
-	.pin{
-		height: 2rem;
-		width: auto;
-		margin: 1.2rem;
-	}
-}
-
-@media (min-width: 462px) { 
-
-	aside {
-		height: 23rem;
-	}
-	h3{
-		padding: 0;
-		font-size: 1.48em;
-	}
-
-}
-
-
-@media (min-width: 801px) { 
-
-	aside {
-		height: 24rem;
-	}
-}
-
-@media (min-width: 1022px) { 
-
-	aside {
-			height: 26rem;
-		}
-}
-
-@media (min-width: 1122px) { 
-	aside {
-		height: 26rem;
-	}
-}
-
-@media (min-width: 1230px) { 
-	
-	aside {
-		height: 27rem;
-	}
-}
-
-@media (min-width: 1300px) { 
-	aside {
-		height: 27rem;
-	}
-}
-
-
-@media (min-width: 1900px) { 
-
-	aside{
-		width: 80rem;
-		height: 27rem;
-	}
-}
-
-@media (min-width: 2000px) { 
-
-	aside{
-		width: 80rem;
-		height: 27rem;
-	}
-}
-*/
 
 
