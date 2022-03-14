@@ -1,310 +1,366 @@
-
-* { /* Poor Man's Reset */
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+* {
+        /* Poor Man's Reset */
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
 }
 
 /*;*/
 body {
-	color: rgb(255, 255, 255);
-	text-align: center;
-	background-image: url("./assets/black_scales.png");
-	font-size: calc(1em + 0.5vw);
-	font-family: 'Work Sans', sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        background-image: url("./assets/black_scales.png");
+        font-size: calc(1em + 0.5vw);
+        font-family: 'Work Sans', sans-serif;
 }
 
 header,
 main {
-	width: 80vw;
-	margin: 20px auto;
-	background-image: url("./assets/black_scales.png");
+        width: 80vw;
+        margin: 20px auto;
+        background-image: url("./assets/black_scales.png");
 }
-#msgtome{
-	position: fixed;
-	top: 32px;
-	right: 53px;
+#msgtome {
+        position: fixed;
+        top: 32px;
+        right: 53px;
 }
 
-.hover:hover{
-	cursor: pointer;
+.hover:hover {
+        cursor: pointer;
 }
 .titulo {
-	height: 30vh;
-	display: grid;
-	place-items: center;
+        height: 30vh;
+        display: grid;
+        place-items: center;
 }
-.blg{
-	height: 40rem;
-	width: auto;
-	border: solid 3px #dcdfe0;
-	border-radius: 5%;
-	margin-bottom: 39px;
+.blg {
+        height: 40rem;
+        width: auto;
+        border: solid 3px #dcdfe0;
+        border-radius: 5%;
+        margin-bottom: 39px;
 }
 
 h1 {
-	font-weight: 300;
-	font-size: 3.5em;
+        font-weight: 300;
+        font-size: 3.5em;
 }
 
-path { fill: orange; }
+path {
+        fill: orange;
+}
 
 td {
-	min-width: 14.5rem;
+        min-width: 14.5rem;
 }
 
 h2 {
-	font-weight: 300;
-	font-size: 2.5em;
+        font-weight: 300;
+        font-size: 2.5em;
 }
 
 h3 {
-	font-weight: 300;
-	font-size: 1.7em;
-	padding-left: 7rem;
+        font-weight: 300;
+        font-size: 1.7em;
+        padding-left: 7rem;
 }
 
-h4{
-	font-weight: 600;
+h4 {
+        font-weight: 600;
 }
 
-h5{
-	color: #5089C6;
-	padding-left: 3.2rem;
-	
-}
-
-.colorW{
-	color: aliceblue;
-}
-
-.center{
-	text-align: center;
-	color: #B2EA70;
-}
-
-.modaltxt2 {
-	color: aliceblue;
-	padding-left: 3.2rem;
-}
-
-.modal-content{
-	background-image: url("./assets/modaleb.jpg");;
-	border: solid #f0f8ff;
-}
-
-ul { 
-	list-style:  none;
-	padding:  0;
-}
-
-section{
-	padding-left: 3.3rem; 
-	margin-bottom: 1rem;
-}
-
-.bullet:before {
-	content:  url('./assets/tick.png');
-	display:  inline-block;
-	vertical-align:  middle;
-	margin-right:   1em;
-	margin-top: 0.2em;
-}
-
-.up{
-
-	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 2.5rem;
-	margin-left: -8rem;
-	
-}
-
-#folder{
-	height: 60px;
-}
-#switch{
-	height: 43px;
-}
-#doc{
-	height: 50px;
+h5 {
+        color: #77a5d6;
+        padding-left: 3.2rem;
 
 }
-#letter:hover{
-	animation: flip 2s ease infinite;	
-	backface-visibility: visible !important;
+
+.colorT {
+	color: #9ba6aa;
+}
+.colorW {
+        color: aliceblue;
 }
 
-@keyframes flip {
-	0% {
-		transform: perspective(400px) rotateY(0);
-		animation-timing-function: ease-out;
-	}
-	40% {
-		transform: perspective(400px) translateZ(150px) rotateY(170deg);
-		animation-timing-function: ease-out;
-	}
-	50% {
-		transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-		animation-timing-function: ease-in;
-	}
-	80% {
-		transform: perspective(400px) rotateY(360deg) scale(.95);
-		animation-timing-function: ease-in;
-	}
-	100% {
-		transform: perspective(400px) scale(1);
-		animation-timing-function: ease-in;
-	}
-}
-#folder:hover{
-	animation: bounce 1s ease infinite;
+.center {
+        text-align: center;
+        color: #B2EA70;
 }
 
-@keyframes bounce {
-    70% { transform:translateY(0%); }
-    80% { transform:translateY(-15%); }
-    90% { transform:translateY(0%); }
-    95% { transform:translateY(-7%); }
-    97% { transform:translateY(0%); }
-    99% { transform:translateY(-3%); }
-    100% { transform:translateY(0); }
-}
-
-#doc:hover{
-	cursor: pointer;
-  	animation: hithere 1s ease infinite;
-}
-@keyframes hithere {
-  30% { transform: scale(1.2); }
-  40%, 60% { transform: rotate(-20deg) scale(1.2); }
-  50% { transform: rotate(20deg) scale(1.2); }
-  70% { transform: rotate(0deg) scale(1.2); }
-  100% { transform: scale(1); }
-}
-#switch:hover{
-	animation: pulse 1s infinite ease-in-out alternate;
-}
-@keyframes pulse {
-  from { transform: scale(0.8); }
-  to { transform: scale(1.2); }
-}
-
-p {
-	font-weight: 300;
-	line-height: 1.42;
-	font-size: 1.5rem;
-}
-
-.modal{
-	color: black;
-	text-align: left;
-	font-size: 1.3rem;
-}
-
-
-
-.btn {
-	background: #B2EA70;
-	border: solid #B2EA70;
-	color: #000000;
-	text-decoration: none;
-	display: inline-block;
-	padding: 0.5em;
-	border-radius: 0.25em;
-}
-
-aside {
-	width: 78rem;
-	height: 27rem;
-	padding-right: 2rem;
-	padding-left: 2rem;
-	text-align: left;
-	padding-left: 9rem;
-	text-align: justify;
-	padding-right: 4rem;
-	scroll-margin-top: 20px;
-}
-
-#spacer{
-	margin-top: 15rem;
-}
-
-#recuadro {
-	display: flex;
-	flex-direction: row;
-	border-left: solid 4px aliceblue ;
-	border-bottom: solid 4px aliceblue;
-}
-
-
-#foto{
-	height: 16.9em;
-	width: auto;
-}
-
-#tiraPin{
-	display: flex;
-	flex-direction: row;
-
-	margin-top: 40px;
-	margin-bottom: 180px;
-
-}	
-
-.barra{
-	min-width: 340px;
-	border-bottom: solid 4px aliceblue;
-}
-.pin{
-	height: 4.7rem;
-	width: auto;
-	margin: 1.5rem;
-}
-
-@-webkit-keyframes slide {
-    0% { opacity:0; transform: translateX(15vw); }	
-   20% { opacity:1; transform: translateX(9vw); }	
-   80% { opacity:1; transform: translateX(-2vw); }	
-  100% { opacity:0; transform: translateX(-3vw); }	
-}
-@keyframes slide {
-    0% { opacity:0; transform: translateX(15vw); }	
-   20% { opacity:1; transform: translateX(9vw); }	
-   80% { opacity:1; transform: translateX(-2vw); }	
-  100% { opacity:0; transform: translateX(-3vw); }	
-}
-
-
-hr{
-	color: aliceblue;
-	
-}
-
-a{
-	color: azure;
-	text-decoration: none;
-}
-.nav:hover{
+.modaltxt:hover{
 	color: #23d3e6;
 }
 
-
-.icon{
-	height: 4rem;
-	margin-bottom: 10rem;
-	cursor: pointer;
+.modal-content {
+        background-image: url("./assets/modaleb.jpg");
+        border: solid #f0f8ff;
 }
 
-.mod:hover{
-	cursor: pointer;
-    	box-shadow: 0px 10px #5089C6;
-	border-radius: 50%;	
+ul {
+        list-style: none;
+        padding: 0;
+}
+
+section {
+        padding-left: 3.3rem;
+        margin-bottom: 1rem;
+}
+
+.bullet:before {
+        content: url('./assets/tick.png');
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1em;
+        margin-top: 0.2em;
+}
+
+.up {
+
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 2.5rem;
+        margin-left: -8rem;
+
+}
+
+#folder {
+        height: 60px;
+}
+#switch {
+        height: 43px;
+}
+#doc {
+        height: 50px;
+
+}
+#letter:hover {
+        animation: flip 2s ease infinite;
+        backface-visibility: visible !important;
+}
+
+@keyframes flip {
+        0% {
+                transform: perspective(400px) rotateY(0);
+                animation-timing-function: ease-out;
+        }
+        40% {
+                transform: perspective(400px) translateZ(150px) rotateY(170deg);
+                animation-timing-function: ease-out;
+        }
+        50% {
+                transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+                animation-timing-function: ease-in;
+        }
+        80% {
+                transform: perspective(400px) rotateY(360deg) scale(0.95);
+                animation-timing-function: ease-in;
+        }
+        100% {
+                transform: perspective(400px) scale(1);
+                animation-timing-function: ease-in;
+        }
+}
+#folder:hover {
+        animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+        70% {
+                transform: translateY(0%);
+        }
+        80% {
+                transform: translateY(-15%);
+        }
+        90% {
+                transform: translateY(0%);
+        }
+        95% {
+                transform: translateY(-7%);
+        }
+        97% {
+                transform: translateY(0%);
+        }
+        99% {
+                transform: translateY(-3%);
+        }
+        100% {
+                transform: translateY(0);
+        }
+}
+
+#doc:hover {
+        cursor: pointer;
+        animation: hithere 1s ease infinite;
+}
+@keyframes hithere {
+        30% {
+                transform: scale(1.2);
+        }
+        40%,
+        60% {
+                transform: rotate(-20deg) scale(1.2);
+        }
+        50% {
+                transform: rotate(20deg) scale(1.2);
+        }
+        70% {
+                transform: rotate(0deg) scale(1.2);
+        }
+        100% {
+                transform: scale(1);
+        }
+}
+#switch:hover {
+        animation: pulse 1s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+        from {
+                transform: scale(0.8);
+        }
+        to {
+                transform: scale(1.2);
+        }
+}
+
+p {
+        font-weight: 300;
+        line-height: 1.42;
+        font-size: 1.5rem;
+}
+
+.modal {
+        color: black;
+        text-align: left;
+        font-size: 1.3rem;
 }
 
 
-.menu{
-	position: fixed;
+.btn {
+        background: #87b850;
+        border: solid #87b850;
+        color: #000000;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.5em;
+        border-radius: 0.25em;
+}
+
+aside {
+        width: 78rem;
+        height: 27rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        text-align: left;
+        padding-left: 9rem;
+        text-align: justify;
+        padding-right: 4rem;
+        scroll-margin-top: 20px;
+}
+
+#spacer {
+        margin-top: 15rem;
+}
+
+#recuadro {
+        display: flex;
+        flex-direction: row;
+        border-left: solid 4px aliceblue;
+        border-bottom: solid 4px aliceblue;
+}
+
+
+#foto {
+        height: 16.9em;
+        width: auto;
+}
+
+#tiraPin {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 40px;
+        margin-bottom: 180px;
+
+}
+
+.barra {
+        min-width: 340px;
+        border-bottom: solid 4px aliceblue;
+}
+.pin {
+        height: 4.7rem;
+        width: auto;
+        margin: 1.5rem;
+}
+
+@-webkit-keyframes slide {
+        0% {
+                opacity: 0;
+                transform: translateX(15vw);
+        }
+        20% {
+                opacity: 1;
+                transform: translateX(9vw);
+        }
+        80% {
+                opacity: 1;
+                transform: translateX(-2vw);
+        }
+        100% {
+                opacity: 0;
+                transform: translateX(-3vw);
+        }
+}
+@keyframes slide {
+        0% {
+                opacity: 0;
+                transform: translateX(15vw);
+        }
+        20% {
+                opacity: 1;
+                transform: translateX(9vw);
+        }
+        80% {
+                opacity: 1;
+                transform: translateX(-2vw);
+        }
+        100% {
+                opacity: 0;
+                transform: translateX(-3vw);
+        }
+}
+
+
+hr {
+        color: aliceblue;
+
+}
+
+a {
+        color: azure;
+        text-decoration: none;
+}
+.nav:hover {
+        color: #23d3e6;
+}
+
+
+.icon {
+        height: 4rem;
+        margin-bottom: 10rem;
+        cursor: pointer;
+}
+
+.mod:hover {
+        cursor: pointer;
+        box-shadow: 0 10px #5089C6;
+        border-radius: 50%;
+}
+
+
+.menu {
+        position: fixed;
 }
 
 
@@ -312,346 +368,338 @@ a{
 
 
 .popover__wrapper {
-  position: relative;
-  margin-top: 1.5rem;
-  display: inline-block;
+        position: relative;
+        margin-top: 1.5rem;
+        display: inline-block;
 }
 
 .popover__content {
-  opacity: 0;
-  visibility: hidden;
-  position: relative;
-  transform: translate(0, 1px);
-  width: auto;
-  margin-top: -6rem;
+        opacity: 0;
+        visibility: hidden;
+        position: relative;
+        transform: translate(0, 1px);
+        width: auto;
+        margin-top: -6rem;
 }
 
 .popover__wrapper:hover .popover__content {
-  z-index: 10;
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0, -20px);
-  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -20px);
+        transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
 }
 .popover__message {
-	text-align: center;
-	text-indent: none;
+        text-align: center;
+        text-indent: none;
 }
 
 .card {
-	outline: var(--outline-width) solid hotpink;
-	padding: 3rem;
-	border-radius: 1em;
+        outline: var(--outline-width) solid hotpink;
+        padding: 3rem;
+        border-radius: 1em;
 }
 
 .card__content {
-	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-	background: rgb(255, 255, 255);
-	color: rgb(10, 5, 7);
-	border-radius: 1em;
-	overflow: hidden;
+        box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+        background: rgb(255, 255, 255);
+        color: rgb(10, 5, 7);
+        border-radius: 1em;
+        overflow: hidden;
 
-	display: grid;
-	grid-template-areas: "text img";
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	padding: 3rem;
-	align-items: stretch;
-	outline: var(--outline-width) solid lime;
+        display: grid;
+        grid-template-areas: "text img";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 3rem;
+        align-items: stretch;
+        outline: var(--outline-width) solid lime;
 
 }
 
 .card__content > div {
-	grid-area: text;
-	width: 80%;
-	place-self: center;
-	text-align: left;
+        grid-area: text;
+        width: 80%;
+        place-self: center;
+        text-align: left;
 
-	display: grid;
-	gap: 1em;
-	place-items: start;
+        display: grid;
+        gap: 1em;
+        place-items: start;
 }
 
 .card__content > figure {
-	grid-area: img;
-	overflow: hidden;
-	border: solid 3px #dcdfe0;
-	border-radius: 5%;
+        grid-area: img;
+        overflow: hidden;
+        border: solid 3px #dcdfe0;
+        border-radius: 5%;
 }
 
 .card__content > figure > img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 }
 
-#wrk{
-	border: solid 2px white;
-	background-color: white;
+#wrk {
+        border: solid 2px white;
+        background-color: white;
 }
-#wrk2{
-	border-bottom: solid 50px white;
+#wrk2 {
+        border-bottom: solid 50px white;
 }
 /** DEBUG **/
 
 #debug {
-	position: fixed;
-	top: 1em;
-	left: 1em;
+        position: fixed;
+        top: 1em;
+        left: 1em;
 }
 #debug::after {
-	content: " Show Debug";
-	margin-left: 1.5em;
-	color: white;
-	white-space: nowrap;
+        content: " Show Debug";
+        margin-left: 1.5em;
+        color: white;
+        white-space: nowrap;
 }
 
 #debug:checked ~ main {
-	--outline-width: 1px;
+        --outline-width: 1px;
 }
 
 :root {
-	--card-height: 40vw;
-	--card-margin: 4vw;
-	--card-top-offset: 1em;
-	--numcards: 4;
-	--outline-width: 0px;
+        --card-height: 40vw;
+        --card-margin: 4vw;
+        --card-top-offset: 1em;
+        --numcards: 4;
+        --outline-width: 0;
 }
 
-#mainline{
-	display: flex;
-	text-align: left;
-	margin: 40px;
+#mainline {
+        display: flex;
+        text-align: left;
+        margin: 40px;
 }
 
 
 #cards {
-	list-style: none;
-	outline: calc(var(--outline-width) * 10) solid blue;
+        list-style: none;
+        outline: calc(var(--outline-width) * 10) solid blue;
 
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(var(--numcards), var(--card-height));
-	gap: var(--card-margin);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(var(--numcards), var(--card-height));
+        gap: var(--card-margin);
 }
 
 #cards {
-	padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
-	margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+        padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
+        margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
 }
 
 #card_1 {
-	--index: 1;
+        --index: 1;
 }
 
 #card_2 {
-	--index: 2;
+        --index: 2;
 }
 
 #card_3 {
-	--index: 3;
+        --index: 3;
 }
 
 #card_4 {
-	--index: 4;
+        --index: 4;
 }
-
 
 
 .card {
-	position: sticky;
-	top: 0;
-	padding-top: calc(var(--index) * var(--card-top-offset));
+        position: sticky;
+        top: 0;
+        padding-top: calc(var(--index) * var(--card-top-offset));
 }
 
-@supports (animation-timeline: works) {
+@supports(animation-timeline: works) {
 
-	@scroll-timeline cards-element-scrolls-in-body {
-		source: selector();
-		scroll-offsets:
-			/* Start when the start edge touches the top of the scrollport */
-			selector(#cards) start 1,
-			/* End when the start edge touches the start of the scrollport */
-			selector(#cards) start 0
-		;
-		start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
-		end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
-		time-range: 4s;
-	}
+        @scroll-timeline cards-element-scrolls-in-body {
+                source: selector();
+                scroll-offsets: /* Start when the start edge touches the top of the scrollport */
+                selector(#cards) start 1, /* End when the start edge touches the start of the scrollport */
+                selector(#cards) start 0;
+                start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
+                end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+                time-range: 4s;
+        }
 
-	.card {
-		--index0: calc(var(--index) - 1); /* 0-based index */
-		--reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
-		--reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
-	}
-	
-	.card__content {
-		transform-origin: 50% 0%;	
-		border-left: solid 4px aliceblue ;
-		border-bottom: solid 4px aliceblue;
-		will-change: transform;
-		--duration: calc(var(--reverse-index0) * 1s);
-		--delay: calc(var(--index0) * 1s);
+        .card {
+                --index0: calc(var(--index) - 1); /* 0-based index */
+                --reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
+                --reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+        }
 
-		animation: var(--duration) linear scale var(--delay) forwards;
-		animation-timeline: cards-element-scrolls-in-body;
-	}
+        .card__content {
+                transform-origin: 50% 0;
+                border-left: solid 4px aliceblue;
+                border-bottom: solid 4px aliceblue;
+                will-change: transform;
+                --duration: calc(var(--reverse-index0) * 1s);
+                --delay: calc(var(--index0) * 1s);
 
-	@keyframes scale {
-		to {
-			transform:
-				scale(calc(
-					1.1
-					-
-					calc(0.1 * var(--reverse-index))
-				));
-		}
-	}
+                animation: var(--duration) linear scale var(--delay) forwards;
+                animation-timeline: cards-element-scrolls-in-body;
+        }
+
+        @keyframes scale {
+                to {
+                        transform: scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
+                }
+        }
 }
 
 
-@media (min-width: 300px) and (max-width: 450px){
+@media(min-width: 300px) and(max-width: 450px) {
 
-	#foto{
-		height: 12rem;
-	}
-	#blog, #proy, #cont {
-		padding-top: 1rem;
-	}
+        #foto {
+                height: 12rem;
+        }
+        #blog,
+        #proy,
+        #cont {
+                padding-top: 1rem;
+        }
 
-	aside {
-		height: 12rem;
-		width: 20.5rem;
-		padding: 1rem;
-		margin-top: 1rem;
-		margin-bottom: 5px;
-		overflow: scroll;
-	}
-	p{
-		font-size: medium;
-		margin-bottom: 14px;
-		text-align: left;
-		text-indent: 30px;
-	}
-	h1{
-		font-size: 3em;
-	}
-	h2{
-		font-size: 1.5rem;
-	}
-	h3{
-		padding: 0;
-		font-size: 1.5em;
-	}
-	#foto{
-		height: 12rem;
-		border: solid 2px aliceblue;
-	}
-	#mainline{
-		font-size: larger;
-		margin: 18px 0 18px 0;
-	}
-	#tiraPin{
-		display: block;
-		margin-bottom: 60px;
-	}
-	#recuadro{
-		display: block;
-		height: 22.5em;
-	}
-	.pin{
-		height: 2rem;
-		width: auto;
-		margin: 1rem;
-	}
+        aside {
+                height: 12rem;
+                width: 20.5rem;
+                padding: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 5px;
+                overflow: scroll;
+        }
+        p {
+                font-size: medium;
+                margin-bottom: 14px;
+                text-align: left;
+                text-indent: 30px;
+        }
+        h1 {
+                font-size: 3em;
+        }
+        h2 {
+                font-size: 1.5rem;
+        }
+        h3 {
+                padding: 0;
+                font-size: 1.5em;
+        }
+        #foto {
+                height: 12rem;
+                border: solid 2px aliceblue;
+        }
+        #mainline {
+                font-size: larger;
+                margin: 18px 0;
+        }
+        #tiraPin {
+                display: block;
+                margin-bottom: 60px;
+        }
+        #recuadro {
+                display: block;
+                height: 22.5em;
+        }
+        .pin {
+                height: 2rem;
+                width: auto;
+                margin: 1rem;
+        }
 
-	#msgtome{
-		top: 20px;
-		right: 18px;
-	}
+        #msgtome {
+                top: 20px;
+                right: 18px;
+        }
 
-	#letter{
-		height: 26px;
-		margin-left: 25px;
-	}
-	.barra{
-		min-width: 260px;
-	}
-	.tira{
-		font-size: large;
-		padding: 5px !important;
-	}
-	.iconop{
-		width: 11.5rem;
-		margin: 20px;
-	}
-	#doc, #switch {
-		height: 2.5rem;
-	}
-	#folder{
-		height: 3rem;
-	}
-	.up{
-		position: sticky;
-		top: 1.5rem;
-		margin-left: -1.8rem;
-	}
-	#arr{
-		height: 40px;
-	}
-	.blg {
-	height: 18rem;
-	width: auto;
-	border: solid 3px #dcdfe0;
-	border-radius: 5%;
-	margin-bottom: 173px;
-	}	
-	.card{
-		padding: 0px;
-	}
-	.card__content{
-		padding: 20px;
-		display:block;
-	}
-	.card__content2{
-		display: inline-block !important;
-	}
-	figure{
-		height: 150px;
-	}
-	.p_card{
-		font-size: smaller;
-		text-indent: 0px;
-	}
-	#cards{
-		grid-template-rows: none;
-		gap: 1.5rem;
-		width: 16.5rem;
-		margin-left: 32px;
-	}
-	#worke{
-		height: 6.5rem;
-	}
-	.contacto {
-  		height: 25vh;
-		margin-top: 4rem;
-	}
-	td{
-		min-width: 11.5rem;
-	}
-	ul,h5{
-		font-size: medium;
-	}
-	#spacer{
-		width: 19rem;
-		margin: 7rem 1rem 7.5rem 1rem;
-	}
-	.popover__message{
-		text-indent: 0px;
-		margin: 0 2rem 0 2rem;
-	}
-	
+        #letter {
+                height: 26px;
+                margin-left: 25px;
+        }
+        .barra {
+                min-width: 260px;
+        }
+        .tira {
+                font-size: large;
+                padding: 5px !important;
+        }
+        .iconop {
+                width: 11.5rem;
+                margin: 20px;
+        }
+        #doc,
+        #switch {
+                height: 2.5rem;
+        }
+        #folder {
+                height: 3rem;
+        }
+        .up {
+                position: sticky;
+                top: 1.5rem;
+                margin-left: -1.8rem;
+        }
+        #arr {
+                height: 40px;
+        }
+        .blg {
+                height: 18rem;
+                width: auto;
+                border: solid 3px #dcdfe0;
+                border-radius: 5%;
+                margin-bottom: 173px;
+        }
+        .card {
+                padding: 0;
+        }
+        .card__content {
+                padding: 20px;
+                display: block;
+        }
+        .card__content2 {
+                display: inline-block !important;
+        }
+        figure {
+                height: 150px;
+        }
+        .p_card {
+                font-size: smaller;
+                text-indent: 0;
+        }
+        #cards {
+                grid-template-rows: none;
+                gap: 1.5rem;
+                width: 16.5rem;
+                margin-left: 32px;
+        }
+        #worke {
+                height: 6.5rem;
+        }
+        .contacto {
+                height: 25vh;
+                margin-top: 4rem;
+        }
+        td {
+                min-width: 11.5rem;
+        }
+        ul,
+        h5 {
+                font-size: medium;
+        }
+        #spacer {
+                width: 19rem;
+                margin: 7rem 1rem 7.5rem;
+        }
+        .popover__message {
+                text-indent: 0;
+                margin: 0 2rem;
+        }
+
 }
-
-
-
