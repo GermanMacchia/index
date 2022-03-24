@@ -557,7 +557,7 @@ a {
 }
 
 
-@media(min-width: 300px) and(max-width: 450px) {
+@media(min-width: 300px) and (max-width: 450px) {
 
         #foto {
                 height: 12rem;
