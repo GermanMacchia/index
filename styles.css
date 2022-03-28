@@ -33,6 +33,7 @@ main {
         height: 30vh;
         display: grid;
         place-items: center;
+        margin-top: 30px;
 }
 .blg {
         height: 40rem;
@@ -702,7 +703,7 @@ a {
         }
         #spacer {
                 width: 19rem;
-                margin: 7rem 1rem 7.5rem;
+                margin: 4.5rem 1rem 7.5rem;
         }
         .popover__message {
                 text-indent: 0;
