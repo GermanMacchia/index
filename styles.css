@@ -279,10 +279,14 @@ aside {
         display: flex;
         flex-direction: row;
 
-        margin-top: 40px;
+        margin-top: 5px;
         margin-bottom: 180px;
 
+        border-bottom: 4px solid aliceblue;
+        border-image: linear-gradient(to right, rgba(108,219,141,0) 42%,aliceblue 64%, aliceblue 100%, rgba(108,219185,141,0) 100%);
+        border-image-slice: 1;
 }
+
 
 .barra {
         min-width: 340px;
