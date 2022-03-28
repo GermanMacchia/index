@@ -283,7 +283,7 @@ aside {
         margin-bottom: 180px;
 
         border-bottom: 4px solid aliceblue;
-        border-image: linear-gradient(to right, rgba(108,219,141,0) 42%,aliceblue 64%, aliceblue 100%, rgba(108,219185,141,0) 100%);
+        border-image: linear-gradient(to right, rgba(108,219,141,0) 42%,aliceblue 64%, aliceblue 100%);
         border-image-slice: 1;
 }
 
@@ -291,7 +291,10 @@ aside {
 .barra {
         min-width: 340px;
         border-bottom: solid 4px aliceblue;
+        border-image: linear-gradient(to right, rgba(108,219,141,0) 0%,aliceblue 25%, aliceblue 100%);
+        border-image-slice: 1;
 }
+
 .pin {
         height: 4.7rem;
         width: auto;
