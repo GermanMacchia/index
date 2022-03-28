@@ -642,12 +642,14 @@ a {
                 width: 11.5rem;
                 margin: 20px;
         }
-        #doc,
-        #switch {
+        #folder {
                 height: 2.5rem;
         }
-        #folder {
-                height: 3rem;
+        #switch {
+                height: 2rem;
+        }
+        #doc{
+                height: 2.2rem;
         }
         .up {
                 position: sticky;
