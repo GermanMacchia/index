@@ -22,8 +22,8 @@ main {
 }
 #msgtome {
         position: fixed;
-        top: 32px;
-        right: 53px;
+        top: 2vw;
+        right: 1vw;
 }
 
 .hover:hover {
@@ -36,7 +36,7 @@ main {
         margin-top: 30px;
 }
 .blg {
-        height: 40rem;
+        height: 33vw;
         width: auto;
         border: solid 3px #dcdfe0;
         border-radius: 5%;
@@ -58,13 +58,13 @@ td {
 
 h2 {
         font-weight: 300;
-        font-size: 2.5em;
+        font-size: 2.5vw;
 }
 
 h3 {
         font-weight: 300;
         font-size: 1.7em;
-        padding-left: 7rem;
+        padding-left: 6vw;
 }
 
 h4 {
@@ -73,7 +73,7 @@ h4 {
 
 h5 {
         color: #77a5d6;
-        padding-left: 3.2rem;
+        padding-left: 3.2vw;
 
 }
 
@@ -121,8 +121,8 @@ section {
 
         position: -webkit-sticky; /* Safari */
         position: sticky;
-        top: 2.5rem;
-        margin-left: -8rem;
+        top: 3vw;
+        margin-left: -8vw;
 
 }
 
@@ -228,7 +228,7 @@ section {
 p {
         font-weight: 300;
         line-height: 1.42;
-        font-size: 1.5rem;
+        font-size: 1.6vw;
 }
 
 .modal {
@@ -248,19 +248,23 @@ p {
 }
 
 aside {
-        width: 78rem;
-        height: 27rem;
+        height: 24vw;
         padding-right: 2rem;
         padding-left: 2rem;
         text-align: left;
         padding-left: 9rem;
         text-align: justify;
         padding-right: 4rem;
+        overflow-y: scroll;
         scroll-margin-top: 20px;
 }
 
+.p-4{
+        padding: 1.5vw !important;
+}
+
 #spacer {
-        margin-top: 15rem;
+        margin-top: 15vw;
 }
 
 #recuadro {
@@ -272,7 +276,7 @@ aside {
 
 
 #foto {
-        height: 16.9em;
+        height: 24vw;
         width: auto;
 }
 
@@ -297,7 +301,7 @@ aside {
 }
 
 .pin {
-        height: 4.7rem;
+        height: 4vw;
         width: auto;
         margin: 1.5rem;
 }
@@ -432,7 +436,7 @@ a {
         text-align: left;
 
         display: grid;
-        gap: 1em;
+        gap: 1vw;
         place-items: start;
 }
 
@@ -475,9 +479,9 @@ a {
 }
 
 :root {
-        --card-height: 40vw;
+        --card-height: 35vw;
         --card-margin: 4vw;
-        --card-top-offset: 1em;
+        --card-top-offset: 2vw;
         --numcards: 4;
         --outline-width: 0;
 }
@@ -485,7 +489,7 @@ a {
 #mainline {
         display: flex;
         text-align: left;
-        margin: 40px;
+        margin-left: 6vw;
 }
 
 
@@ -524,9 +528,9 @@ a {
 .card {
         position: sticky;
         top: 0;
-        padding-top: calc(var(--index) * var(--card-top-offset));
+        
 }
-
+/*padding-top: calc(var(--index) * var(--card-top-offset));*/
 @supports(animation-timeline: works) {
 
         @scroll-timeline cards-element-scrolls-in-body {
