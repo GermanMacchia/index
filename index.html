@@ -6,9 +6,9 @@
 		<link href="css/bootstrap.css" rel="stylesheet"/>
 		<link href="styles.css" rel="stylesheet"/>	
 		<link href="./assets/id-card.png" rel="shortcut icon">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
 		<script type="text/javascript" src="js/bootstrap.js" /></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Germán Osses Macchia</title>
@@ -132,7 +132,7 @@
 							<h2>[HEROKU]</h2>
 							<p class="p_card">Gestor de prestamos elaborado en ReactJS</p>
 							<span class="iconop">
-								<a data-bs-toggle="modal" data-bs-target="#progressModalHeroku" target="_blank"><img id="doc" src='./assets/doc2.svg'></a>
+								<!--a data-bs-toggle="modal" data-bs-target="#progressModalHeroku" target="_blank"><img id="doc" src='./assets/doc2.svg'/-->
 								<a href="https://mis-libros.herokuapp.com"  target="_blank"><img id="switch" src='./assets/switch.svg'></a>
 								<a href="https://github.com/GermanMacchia/Mis_libros-3.0-Sagas" target="_blank"><img id="folder" src='./assets/folder2.svg'></a>
 							</span>
@@ -149,7 +149,7 @@
 							<h2>[HEROKU]</h2>
 							<p class="p_card">API rest de Mis Libros App</p>
 							<span class="iconop">
-								<a data-bs-toggle="modal" data-bs-target="#progressModalHeroku" target="_blank"><img id="doc" src='./assets/doc2.svg'></a>
+								<!--a data-bs-toggle="modal" data-bs-target="#progressModalHeroku" target="_blank"><img id="doc" src='./assets/doc2.svg'/-->
 								<a href="https://mis-libros.herokuapp.com"  target="_blank"><img id="switch" src='./assets/switch.svg'></a>
 								<a href="https://github.com/GermanMacchia/Mislibros_BckEnd" target="_blank"><img id="folder" src='./assets/folder2.svg'></a>
 							</span>
@@ -485,35 +485,46 @@
 
 	<!-- Modal HERRAMIENTAS -->
 	<div class="modal fade" id="herrModal" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content">
+		<div class="modal-dialog"  >
+			<div class="modal-content" style="width: 52vw">
 				<div class="modal-header">
 					<h4 class="modal-title center" id="exampleModalLabel">HERRAMIENTAS</h4>
 					<button type="button" class="btn btn-danger" style="width: 50px" data-bs-dismiss="modal"><b>X</b></button>
 				</div>
 				<div class="modal-body">
 					<b class="colorT">TECNOLOGÍAS & UTILIDADES</b><br/><br/>
-					<table>
+					<table style="overflow: scroll; display: flex;">
 						<tr>
 							<td>
 								<ul>
 									<li class="bullet colorW">MySQL</li>
 									<li class="bullet colorW">MongoDB</li>
-									<li class="bullet colorW">Bootstrap</li>
-									<li class="bullet colorW">Prime React</li>
+									<li class="bullet colorW">DER</li>
+									<li class="bullet colorW">UML</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
 									<li class="bullet colorW">Visual Studio</li>
 									<li class="bullet colorW">.NET</li>
 									<li class="bullet colorW">Eclipse</li>
+									<li class="bullet colorW">Heroku</li>
+								</ul>
+							</td>
+							<td>
+								<ul>		
+									<li class="bullet colorW">GIT</li>
+									<li class="bullet colorW">GitHub</li>
+									<li class="bullet colorW">Bootstrap</li>
+									<li class="bullet colorW">Prime React</li>
+									
 								</ul>
 							</td>
 							<td>
 								<ul>	
-									<li class="bullet colorW">Heroku</li>
-									<li class="bullet colorW">Jira</li>
-									<li class="bullet colorW">GIT</li>
-									<li class="bullet colorW">GitHub</li>
-									<li class="bullet colorW">UML</li>
-									<li class="bullet colorW">DER</li>
+									<li class="bullet colorW">SCRUM</li>
+									<li class="bullet colorW">Desing Patterns</li>
+									<li class="bullet colorW">SEO</li>								
 									<li class="bullet colorW">UX / IxD</li>
 								</ul>
 							</td>
@@ -523,6 +534,11 @@
 					<b class="colorT">CURSOS</b><br/><br/>
 					
 					<ul>
+						<li class="bullet colorW">EXPERTO EN DISEÑO DE EXPERIENCIA 
+							<section>DE USUARIO E INTERACCIONES (UX y IXD)</section></li>
+							<h5>UTN Buenos Aires 2022</h5>
+							<h5 class="colorT"><a class="modaltxt" target="_blank" href="https://sigead.utnba.centrodeelearning.com/alumnos/validar_certificado">Validar certificado</a>
+							CER-V0GE7NDS-702480</h5><br>	
 						<li class="bullet colorW">FUNDAMENTOS DE LA PROGRAMACIÓN</li>
 							<h5>UTN Buenos Aires 2019</h5>
 							<h5 class="colorT"><a class="modaltxt" target="_blank" href="https://sigead.utnba.centrodeelearning.com/alumnos/validar_certificado">Validar certificado</a>
